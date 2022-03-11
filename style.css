@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, lightgrey, lightblue);
+}
+
+article {
+    padding: 2rem;
+    margin-bottom: 1rem;
+    background: white;
+    border-style:solid;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.cards {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+button {
+    margin-left: 2rem;
+}

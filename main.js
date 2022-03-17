@@ -95,6 +95,7 @@ function addItem(input) {
     };
     console.log(item);
     items.push(item);
+    input.value = "";
     render();
 }
 

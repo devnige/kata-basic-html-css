@@ -54,12 +54,11 @@ const setUp = () => {
     
 }
 
-    const createItemHtml = (name, checked, id) => `
-    <article id="${id}" class="card">
-        <p class=${isItemChecked(checked)}>${name}<button id = "${name}button" class="btn--tick" ${isButtonDisabled(checked)}>Tick!</button></p>
-    </article>
-    `;
-
+const createItemHtml = (name, checked, id) => `
+<article id="${id}" class="card">
+    <p class=${isItemChecked(checked)}>${name}<button id = "${name}button" class="btn--tick" ${isButtonDisabled(checked)}>Tick!</button></p>
+</article>
+`;
 
 function render() {
     const itemsHtmlList = [];
@@ -98,8 +97,6 @@ function addItem(input) {
     items.push(item);
     render();
 }
-
-
 
 function isItemChecked(checked){
     if(checked){

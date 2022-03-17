@@ -6,22 +6,45 @@ body {
     background: linear-gradient(90deg, lightgrey, lightblue);
 }
 
-article {
-    padding: 2rem;
-    margin-bottom: 1rem;
-    background: white;
-    border-style:solid;
-    border-color: black;
-    border-radius: 5px;
-}
-
 .cards {
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article {
     justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    margin-bottom: 1rem;
+    background: white;
+    border-style:solid;
+    border-color: black;
+    border-radius: 15px;
 }
 
 button {
-    margin-left: 2rem;
+    margin-left: 3rem;
+    padding: 0.5rem;
 }
+
+.btn--tick {
+    margin-left: 7rem;
+}
+
+.p--linethrough {
+    text-decoration: line-through;
+}
+
+/* Show green borders when valid */
+input[data-state="valid"] {
+    border-color: hsl(120, 76%, 50%);
+  }
+  
+  /* Show red borders when filled, but invalid */
+input[data-state="invalid"] {
+    border-color: hsl(0, 76%, 50%);;
+  }

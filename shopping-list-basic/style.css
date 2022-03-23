@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, lightgrey, lightblue);
+}
+
+/* .cards {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
+
+#items {
+    list-style-type: none;
+    width: 30vw;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    margin-bottom: 1rem;
+    background: white;
+    border-style:solid;
+    border-color: black;
+    border-radius: 15px;
+}
+
+button {
+    padding: 1rem;
+}
+
+.p--linethrough {
+    text-decoration: line-through;
+}
+
+/* Show green borders when valid */
+input[data-state="valid"] {
+    border-color: hsl(120, 76%, 50%);
+  }
+  
+  /* Show red borders when filled, but invalid */
+input[data-state="invalid"] {
+    border-color: hsl(0, 76%, 50%);;
+  }
+
+#userinput {
+    margin: 0 2rem 0 2rem;
+}

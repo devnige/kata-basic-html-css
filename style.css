@@ -7,11 +7,14 @@ body {
 }
 
 #itemscontainer {
-    width: 50%;
-}
-ul {
-    list-style-type: none;
     align-items: center;
+    width: 60%;
+}
+
+ul {
+    width: 50%;
+    padding: 2rem;
+    list-style-type: none;
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
@@ -19,12 +22,13 @@ ul {
 }
 
 li {
-    justify-content: space-between;
+    padding: 2rem;
+    justify-content: space-evenly;
     margin-bottom: 1rem;
     background: white;
     border-style:solid;
     border-color: black;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 #input {
@@ -32,12 +36,18 @@ li {
     padding: 0.5rem;
 }
 
-p {
+span {
+    justify-content: left;
+    margin: 1rem;
     padding: 1rem;
 }
 
+button {
+    justify-content: right;
+}
+
 .btn--tick {
-    margin-left: 7rem;
+    margin: 0rem, 0rem, 0rem, 3rem;
 }
 
 .p--linethrough {

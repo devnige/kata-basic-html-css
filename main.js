@@ -50,13 +50,12 @@ const setUp = () => {
         }
     })
     targetAdd.addEventListener("click", () => addItem(input));
-    //render();
     
 }
 
 const createItemHtml = (name, checked, id) => `
 <li id="${id}" class="card">
-    <p class=${isItemChecked(checked)}>${name}<button id = "${name}button" class="btn--tick" ${isButtonDisabled(checked)}>Tick!</button></p>
+    <span class=${isItemChecked(checked)}>${name}</span><button id = "${name}button" class="btn--tick" ${isButtonDisabled(checked)}>Tick!</button>
 </li>
 `;
 

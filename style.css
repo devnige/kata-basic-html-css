@@ -6,19 +6,20 @@ body {
     background: linear-gradient(90deg, lightgrey, lightblue);
 }
 
-.cards {
+#itemscontainer {
+    width: 50%;
+}
+ul {
+    list-style-type: none;
+    align-items: center;
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-article {
-    justify-content: space-evenly;
-    padding-top: 1rem;
-    padding-right: 3rem;
-    padding-bottom: 1rem;
-    padding-left: 3rem;
+li {
+    justify-content: space-between;
     margin-bottom: 1rem;
     background: white;
     border-style:solid;
@@ -26,9 +27,13 @@ article {
     border-radius: 15px;
 }
 
-button {
-    margin-left: 3rem;
+#input {
+    margin: 3rem;
     padding: 0.5rem;
+}
+
+p {
+    padding: 1rem;
 }
 
 .btn--tick {

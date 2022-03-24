@@ -55,9 +55,9 @@ const setUp = () => {
 }
 
 const createItemHtml = (name, checked, id) => `
-<article id="${id}" class="card">
+<li id="${id}" class="card">
     <p class=${isItemChecked(checked)}>${name}<button id = "${name}button" class="btn--tick" ${isButtonDisabled(checked)}>Tick!</button></p>
-</article>
+</li>
 `;
 
 function render() {

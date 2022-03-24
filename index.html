@@ -6,12 +6,14 @@
     <h1 >My Shopping List</h1>
     <br>
     <br>
-    <p>What would you like to add? &nbsp&nbsp&nbsp<input type="text" id ="input">&nbsp<button id="addbutton">Add me!</button></p>
+    <div>
+        <span>What would you like to add?<input type="text" id ="input"></span><input type="submit" id="addbutton" value="Add me!">
+    </div>
     <br>
-    <section id="items" class="cards">
-            
-    </section>
-    
-    
+    <div id="itemscontainer">
+        <ul id="items" class="cards">
+            <!-- List items will go here       -->
+        </ul>   
+    </div>
 </body>
 </html>

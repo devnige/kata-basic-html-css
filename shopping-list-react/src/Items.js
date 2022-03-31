@@ -1,19 +1,23 @@
 const shoppingList = [
     {
-        name: "Milk",
+        name: "Cat litter",
         id: 0
     },
     {
-        name: "Bread",
+        name: "Cat food",
         id: 1
     },
     {
-        name: "Eggs",
+        name: "Waving cat toy",
         id: 2
     },
     {
-        name: "Bacon",
+        name: "Cat nip",
         id: 3
+    },
+    {
+        name: "Essential CI/CD pipelines for cats book",
+        id: 4
     }
 ];
 

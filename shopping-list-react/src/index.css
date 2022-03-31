@@ -6,9 +6,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-div#Title {
+
+div .title {
   text-align: center;
   margin: 2rem, 0, 2rem, 0;
+}
+
+div .avatar {
+  text-align: center;
+  margin: 2rem;
+}
+
+div #listcontainer{
+  width: 100%;
 }
 
 code {
@@ -30,7 +40,7 @@ ul {
   justify-content: center;
   flex-direction: column;
   margin: 0px auto 0px auto;
-  width: 50%;
+  width: auto;
 }
 li {
   display: flex;

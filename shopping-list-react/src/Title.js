@@ -1,3 +1,3 @@
 import React from 'react';
 
-export const Title = () => <div id="Title"><h1 id="titleheading">My Shopping List</h1></div>;
+export const Title = ({ name }) => <div className="title"><h1 id="titleheading">{name}'s Shopping List</h1></div>;

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { GitHubUser } from './Github';
 import { Title } from './Title';
 import { Item } from './Item';
 import { shoppingList } from './Items';
@@ -8,9 +9,11 @@ import './App.css';
 
 export default function App() {
   const [items, setItems] = useState(shoppingList);
+  const login = "MengpingBao";
   return (
     <>
-      <Title />
+      <GitHubUser login= { login } />
+      <Title name= { login } />
       <AddItem items={ items } setItems={ setItems }/>
       <List items={ items } renderItem={ (item) => {
         return (

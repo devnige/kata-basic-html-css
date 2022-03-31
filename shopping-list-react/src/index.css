@@ -7,6 +7,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+div #wrapper {
+  background-color: rgb(245, 240, 221);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 div .title {
   text-align: center;
   margin: 2rem, 0, 2rem, 0;
@@ -39,9 +46,8 @@ ul {
   display: grid;
   justify-content: center;
   flex-direction: column;
-  margin: 0px auto 0px auto;
-  width: auto;
 }
+
 li {
   display: flex;
   width: 100%;
@@ -50,10 +56,15 @@ li {
   border-radius: 10px;
   list-style: none;
   background-color: #e8e8e8;
+  margin-left: -3rem;
   margin-bottom: 1rem;
   padding: 1rem;
 }
 
 .input {
   margin-right: 1rem;
+}
+
+footer {
+  margin: 0 auto;
 }
